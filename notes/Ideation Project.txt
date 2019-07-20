@@ -11,3 +11,9 @@ Briefly compare the features of these applications with your application idea.
 4. References
 Give references to any material / websites / books etc. relevant to your application idea
 Give the links to the websites relevant to your idea, that you listed in the section above.
+
+Review criteria
+Does the Ideation report clearly state the idea of the project and the primary aim and purpose of the proposed website ?
+Does the Ideation report list the expected features that will be supported by the website?
+Did the user provide a survey of related ideas/projects/websites that have some similarities to the proposed idea?
+Does the Ideation report provide references to suitable sources in support of the project idea?
