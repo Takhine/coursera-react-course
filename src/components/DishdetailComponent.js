@@ -2,9 +2,6 @@ import React,{Component} from 'react';
 import {Card, CardImg, CardText, CardBody, CardTitle} from 'reactstrap';
 import moment from 'moment';
 class DishDetail extends Component{
-    constructor(props){
-        super(props);
-    }
     renderDish(dish){
         return(
 		<Card>
@@ -25,7 +22,7 @@ class DishDetail extends Component{
                         className="list-unstyled"
                     >
                         <p>{comment.comment}</p>
-                        <p>-- {comment.author}, {moment(comment.date). format("MMM Do, YYYY")}</p>
+                        <p>-- {comment.author}, {moment(comment.date).format("MMM Do, YYYY")}</p>
                 </div>
                 );
             });
