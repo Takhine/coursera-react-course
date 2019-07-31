@@ -12,9 +12,9 @@ import moment from 'moment';
         </Card>
         );
     }
-    function RenderComments({dish}){
-        if(dish.comments !=null){
-            const comments=dish.comments.map((comment)=>{
+    function RenderComments({comments}){
+        if(comments !=null){
+            const dishComments=comments.map((comment)=>{
                 return(
                     <ul 
                         key={comment.id}
@@ -28,7 +28,7 @@ import moment from 'moment';
             return (
                 <div>
                 <h4>Comments</h4>
-                <div>{comments}</div>
+                <div>{dishComments}</div>
                 </div>
             );
         }
@@ -47,7 +47,7 @@ import moment from 'moment';
                         <RenderDish dish={props.dish} />
                     </div>
                     <div className="col-12 col-md-5 m-1">
-                        <RenderComments dish={props.dish} />
+                        <RenderComments comments={props.dish.comments} />
                     </div>
                     </div>
                 </div>
