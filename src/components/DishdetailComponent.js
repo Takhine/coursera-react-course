@@ -16,16 +16,21 @@ import moment from 'moment';
         if(dish.comments !=null){
             const comments=dish.comments.map((comment)=>{
                 return(
-                    <div 
+                    <ul 
                         key={comment.id}
                         className="list-unstyled"
                     >
-                        <p>{comment.comment}</p>
-                        <p>-- {comment.author}, {moment(comment.date).format("MMM Do, YYYY")}</p>
-                </div>
+                        <li>{comment.comment}</li>
+                        <li>-- {comment.author}, {moment(comment.date).format("MMM Do, YYYY")}</li>
+                </ul>
                 );
             });
-            return comments;
+            return (
+                <div>
+                <h4>Comments</h4>
+                <div>{comments}</div>
+                </div>
+            );
         }
         else{
              return(
@@ -42,7 +47,6 @@ import moment from 'moment';
                         <RenderDish dish={props.dish} />
                     </div>
                     <div className="col-12 col-md-5 m-1">
-                        <h4>Comments</h4>
                         <RenderComments dish={props.dish} />
                     </div>
                     </div>
