@@ -28,22 +28,22 @@ class Header extends Component{
                 <Collapse isOpen={this.state.isNavOpen} navbar>
                 <Nav navbar>
                     <NavItem>
-                        <NavLink className="nav-link" to="/home">
+                        <NavLink onClick={this.toggleNav} className="nav-link" to="/home">
                             <span className="fa fa-home fa-lg"> Home</span>
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="/aboutus">
+                        <NavLink onClick={this.toggleNav} className="nav-link" to="/aboutus">
                             <span className="fa fa-info fa-lg" > About Us</span>
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="/menu">
+                        <NavLink onClick={this.toggleNav} className="nav-link" to="/menu">
                             <span className="fa fa-list fa-lg"> Menu</span>
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="/home">
+                        <NavLink onClick={this.toggleNav} className="nav-link" to="/contactus">
                             <span className="fa fa-address-carf fa-lg"> Contact Us</span>
                         </NavLink>
                     </NavItem>
